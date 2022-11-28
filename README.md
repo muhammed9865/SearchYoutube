@@ -6,6 +6,6 @@ Most of the work was on running the script
 
 # Run it
 Before using to make sure it works, run this command in cmd
-pip install -r requirements.txt
+"pip install -r requirements.txt"
 
 make sure you are in the directory of the project
