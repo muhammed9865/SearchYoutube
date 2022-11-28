@@ -1,5 +1,5 @@
 # SearchYoutube
-I've started to learn Ktor (backend framework using Kotlin "my  love").
+I've started to learn Ktor (backend framework using Kotlin botbotb).
 Created this simple project to search youtube videos through a simple parameter "query".
 
 Most of the work was on running the script
