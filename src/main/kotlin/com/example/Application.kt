@@ -1,6 +1,6 @@
 package com.example
 
-import com.example.core.processor.SearchProcessor
+import com.example.core.processor.search.SearchProcessor
 import io.ktor.server.application.*
 import com.example.plugins.*
 

@@ -16,7 +16,7 @@ class SearchProcessorTest {
 
         // When
         processor.search(searchRequest)
-        val path = CommandConstants.resultFilePath
+        val path = CommandConstants.searchResultFilePath
         val file = File(path)
 
         // Then
