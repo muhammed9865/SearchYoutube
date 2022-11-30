@@ -1,5 +1,6 @@
-package com.example.core.processor
+package com.example.core.processor.search
 
+import com.example.core.processor.CommandConstants
 import com.example.models.processor.SearchResult
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
@@ -8,7 +9,7 @@ import java.io.File
 class SearchResultExtractor {
     fun extract(): SearchResult? {
         // Opening the result file "result.json"
-        val resultFile = File(SearchConstants.resultFilePath)
+        val resultFile = File(CommandConstants.resultFilePath)
 
         if (!resultFile.exists()) {
             println("Result.json is not found")
@@ -26,6 +27,7 @@ class SearchResultExtractor {
             null
         } finally {
             // deleting result after getting result
+            // Comment/Uncomment line below for test purposes
             resultFile.delete()
         }
 

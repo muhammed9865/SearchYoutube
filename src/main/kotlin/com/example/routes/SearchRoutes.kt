@@ -1,7 +1,7 @@
 package com.example.routes
 
-import com.example.core.processor.SearchException
-import com.example.core.processor.SearchProcessor
+import com.example.core.processor.search.SearchException
+import com.example.core.processor.search.SearchProcessor
 import com.example.models.request.SearchRequest
 import io.ktor.http.*
 import io.ktor.server.application.*
