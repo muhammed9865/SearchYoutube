@@ -20,13 +20,13 @@ class SearchResultExtractor {
 
         // If couldn't decode lines to model, return null
         return try {
-            Json.decodeFromString<SearchResult>(lines).also {
-                // deleting result after getting result
-                resultFile.delete()
-            }
+            Json.decodeFromString<SearchResult>(lines)
         } catch (e: Exception) {
             e.printStackTrace()
             null
+        } finally {
+            // deleting result after getting result
+            resultFile.delete()
         }
 
     }
