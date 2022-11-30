@@ -9,12 +9,15 @@ sealed class FetchResultExtractor {
     companion object {
         fun extract(process: Process) : PlayableVideo? {
             val reader = process.inputStream.bufferedReader()
-            val output = reader.readText()
+            var output = reader.readText()
+
             return try {
                 Json.decodeFromString<PlayableVideo>(output)
             }catch (e: Exception) {
                 e.printStackTrace()
                 null
+            }finally {
+                reader.close()
             }
         }
     }

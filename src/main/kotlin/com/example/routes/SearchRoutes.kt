@@ -10,7 +10,7 @@ import io.ktor.server.routing.*
 
 fun Routing.searchRoutes(processor: SearchProcessor) {
 
-    get {
+    get("/") {
         val query = call.request.queryParameters["query"]
         val maxResult = call.request.queryParameters["max_result"]
 

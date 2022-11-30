@@ -34,7 +34,7 @@ def fetch(url: str):
         }
 
         response = json.dumps(response)
-        print(json.dumps(response))
+        print(response)
         subprocess.run("clip", text=True, input=response)
 
 
