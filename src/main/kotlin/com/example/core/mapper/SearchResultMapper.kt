@@ -3,12 +3,12 @@ package com.example.core.mapper
 import com.example.models.processor.SearchResult
 import com.example.models.processor.Video
 
-fun SearchResult.mapToResponse() = com.example.models.response.SearchResult(
+fun SearchResult.mapToResponse() = com.example.models.response.search.SearchResult(
     videos = videos.map { it.mapToResponse() }
 )
 
-fun Video.mapToResponse() : com.example.models.response.Video {
-    return com.example.models.response.Video(
+fun Video.mapToResponse() : com.example.models.response.search.Video {
+    return com.example.models.response.search.Video(
         id = id,
         title = title,
         channel = channel,

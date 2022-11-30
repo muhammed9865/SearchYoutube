@@ -1,4 +1,4 @@
-package com.example.models.response
+package com.example.models.response.search
 
 @kotlinx.serialization.Serializable
 data class Video(

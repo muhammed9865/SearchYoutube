@@ -4,7 +4,7 @@ import com.example.core.mapper.mapToResponse
 import com.example.core.processor.CommandConstants
 import com.example.core.processor.CommandRunner
 import com.example.models.request.SearchRequest
-import com.example.models.response.SearchResult
+import com.example.models.response.search.SearchResult
 
 class SearchProcessor {
     fun search(searchRequest: SearchRequest): SearchResult {
