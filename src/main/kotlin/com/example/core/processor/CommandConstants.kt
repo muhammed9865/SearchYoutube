@@ -1,7 +1,13 @@
 package com.example.core.processor
 
 object CommandConstants {
-    const val scriptsPath = "./src/main/resources"
-    const val resultFilePath = "$scriptsPath/result.json"
+
+    private const val resourcesPath = "./src/main/resources"
+    const val scriptsPath = "${resourcesPath}/scripts"
+    const val searchResultFilePath = "$scriptsPath/result.json"
+
+    // Scripts paths
+    const val FETCH_SCRIPT = "fetch_video.py"
+    const val SEARCH_SCRIPT = "searchyt.py"
 
 }

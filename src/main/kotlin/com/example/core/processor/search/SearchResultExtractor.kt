@@ -9,7 +9,7 @@ import java.io.File
 class SearchResultExtractor {
     fun extract(): SearchResult? {
         // Opening the result file "result.json"
-        val resultFile = File(CommandConstants.resultFilePath)
+        val resultFile = File(CommandConstants.searchResultFilePath)
 
         if (!resultFile.exists()) {
             println("Result.json is not found")
